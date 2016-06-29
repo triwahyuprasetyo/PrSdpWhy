@@ -43,9 +43,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     @Override
     public void onClick(View v) {
         if (v.getId() == buttonOverride.getId()) {
-            Toast.makeText(getApplicationContext(),"or",Toast.LENGTH_LONG).show();
+            //Toast.makeText(getApplicationContext(),"or",Toast.LENGTH_LONG).show();
         } else {
-            Toast.makeText(getApplicationContext(),"ol",Toast.LENGTH_LONG).show();
+            //Toast.makeText(getApplicationContext(),"ol",Toast.LENGTH_LONG).show();
         }
     }
 
