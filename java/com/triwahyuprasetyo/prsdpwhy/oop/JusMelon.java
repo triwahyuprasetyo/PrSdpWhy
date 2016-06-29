@@ -8,7 +8,7 @@ public class JusMelon extends Minuman implements Suhu, Warna {
 
     @Override
     public Tekstur getTekstur() {
-        return Tekstur.KASAR;
+        return Tekstur.LEMBUT;
     }
 
     @Override

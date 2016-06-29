@@ -9,7 +9,7 @@ public abstract class Minuman {
 
     public enum Tekstur{
 
-        CAIR, KENTAL,KASAR
+        CAIR, KENTAL,LEMBUT
     };
 
     public Minuman() {
@@ -47,6 +47,6 @@ public abstract class Minuman {
     }
 
     public String toString(){
-        return getNama() + " : " + getSuhu() + ", " + getWarna() + ", " + getTekstur();
+        return getNama() + " : " + getSuhu() + ", " + getWarna() + ", " + getTekstur().toString().toLowerCase();
     }
 }
