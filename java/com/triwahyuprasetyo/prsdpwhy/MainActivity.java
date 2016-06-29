@@ -5,11 +5,17 @@ import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
-import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.Button;
+import android.widget.EditText;
+import android.widget.Toast;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity implements View.OnClickListener {
+
+    private EditText editTextPrintOut;
+    private Button buttonOverride, buttonOverload;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,6 +32,21 @@ public class MainActivity extends AppCompatActivity {
                         .setAction("Action", null).show();
             }
         });
+
+        editTextPrintOut = (EditText) findViewById(R.id.editTextPrintOut);
+        buttonOverride = (Button) findViewById(R.id.buttonOverride);
+        buttonOverload = (Button) findViewById(R.id.buttonOverload);
+        buttonOverride.setOnClickListener(this);
+        buttonOverload.setOnClickListener(this);
+    }
+
+    @Override
+    public void onClick(View v) {
+        if (v.getId() == buttonOverride.getId()) {
+            Toast.makeText(getApplicationContext(),"or",Toast.LENGTH_LONG).show();
+        } else {
+            Toast.makeText(getApplicationContext(),"ol",Toast.LENGTH_LONG).show();
+        }
     }
 
     @Override
@@ -49,4 +70,6 @@ public class MainActivity extends AppCompatActivity {
 
         return super.onOptionsItemSelected(item);
     }
+
+
 }

@@ -1,4 +1,7 @@
 <resources>
     <string name="app_name">PrSdpWhy</string>
     <string name="action_settings">Settings</string>
+    <string name="title_name">Contoh Inheritance, Abstract, Interface, Polymorphism</string>
+    <string name="override">Override</string>
+    <string name="overload">Overload</string>
 </resources>
